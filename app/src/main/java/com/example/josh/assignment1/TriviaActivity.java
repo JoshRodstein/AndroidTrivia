@@ -89,8 +89,7 @@ public class TriviaActivity extends AppCompatActivity {
         try {
             FileOutputStream fOut = openFileOutput("score_history.txt",MODE_APPEND);
             String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-            fOut.write((currentDateTimeString + ",").getBytes());
-            fOut.write((Integer.toString(score) + System.getProperty("line.separator")).getBytes());
+            fOut.write((currentDateTimeString + "\t" + score + "\n").getBytes());
             fOut.close();
         } catch(IOException io) {
             Log.e("ERROR", io.toString());

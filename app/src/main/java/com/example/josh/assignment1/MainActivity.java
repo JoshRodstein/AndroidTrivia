@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         final Switch music_switch = (Switch)  findViewById(R.id.music_switch);
         final MediaPlayer mp3 = MediaPlayer.create(this, R.raw.jeopardy);
         music_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

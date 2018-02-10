@@ -1,4 +1,13 @@
-package com.example.josh.assignment1;
+/*
+* By: Joshua Rodstein
+* Assignment1 - CS1699
+* PItt: jor94@pitt.edu
+* ID: 4021607
+*
+* */
+
+
+package com.example.josh.triviagame;
 
 /**
  * Created by josh on 1/24/18.

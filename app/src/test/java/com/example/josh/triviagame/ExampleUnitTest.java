@@ -1,4 +1,4 @@
-package com.example.josh.assignment1;
+package com.example.josh.triviagame;
 
 import org.junit.Test;
 

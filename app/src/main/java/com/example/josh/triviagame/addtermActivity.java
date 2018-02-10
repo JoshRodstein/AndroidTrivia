@@ -1,19 +1,22 @@
-package com.example.josh.assignment1;
+/*
+* By: Joshua Rodstein
+* Assignment1 - CS1699
+* PItt: jor94@pitt.edu
+* ID: 4021607
+*
+* */
 
-import android.content.Intent;
+
+package com.example.josh.triviagame;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.PrintStream;
 
 public class addtermActivity extends AppCompatActivity {
 
@@ -31,7 +34,9 @@ public class addtermActivity extends AppCompatActivity {
         CharSequence termString = term.getText().toString();
         CharSequence defString = def.getText().toString();
 
-        addToGlossary(termString, defString);
+        if(!termString.equals("") && !defString.equals("")){
+            addToGlossary(termString, defString);
+        }
 
         finish();
     }
@@ -46,7 +51,6 @@ public class addtermActivity extends AppCompatActivity {
             fOut.write((t+System.getProperty("line.separator")).getBytes());
             fOut.write((d+System.getProperty("line.separator")).getBytes());
             fOut.close();
-            Toast.makeText(this, (String)term + def, Toast.LENGTH_SHORT).show();
         } catch(IOException io) {
             Log.e("ERROR", io.toString());
         }

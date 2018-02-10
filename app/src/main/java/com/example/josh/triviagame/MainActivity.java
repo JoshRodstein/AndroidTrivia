@@ -1,4 +1,12 @@
-package com.example.josh.assignment1;
+/*
+* By: Joshua Rodstein
+* Assignment1 - CS1699
+* PItt: jor94@pitt.edu
+* ID: 4021607
+*
+* */
+
+package com.example.josh.triviagame;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,11 +14,6 @@ import android.os.Bundle;
 import android.widget.*;
 import android.view.*;
 import android.media.MediaPlayer;
-
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-
 
 
 public class MainActivity extends AppCompatActivity {

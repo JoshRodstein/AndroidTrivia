@@ -93,6 +93,9 @@ public class TriviaActivity extends AppCompatActivity {
         });
     }
 
+    /*
+    * Save score by creating file in Android internal storage
+    * */
     protected void saveScore(int correct){
         int score = correct * 20;
         try {
@@ -105,6 +108,9 @@ public class TriviaActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    * Load, shuffle and read from existing glossary files.
+    * */
     protected void generateQuiz(){
         Random rand = new Random();
         if(glossary != null){

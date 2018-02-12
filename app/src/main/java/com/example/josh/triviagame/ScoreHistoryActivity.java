@@ -50,7 +50,10 @@ public class ScoreHistoryActivity extends AppCompatActivity {
         finish();
     }
 
-
+    /*
+    * loadScors method accepts string of score history and parses into a string
+    * for the ArrayAdapter.
+    * */
     protected void loadScores(String stamps){
         ArrayList<String> split_string = new ArrayList<>(Arrays.asList(stamps.split("\\n")));
         split_string.remove(split_string.size()-1);

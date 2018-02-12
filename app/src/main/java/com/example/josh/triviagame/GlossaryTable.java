@@ -19,7 +19,10 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Created by josh on 1/24/18.
+ * Created by Josh Rodstein on 1/24/18.
+ *
+ * Data structure for loading, reading, and adding to
+ * a glossary file of Terms and corresponding definitions
  */
 
 public class GlossaryTable {

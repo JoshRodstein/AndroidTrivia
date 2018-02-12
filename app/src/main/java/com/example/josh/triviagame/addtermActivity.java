@@ -44,8 +44,6 @@ public class addtermActivity extends AppCompatActivity {
     public void addToGlossary(CharSequence term, CharSequence def){
         String t = (String)term;
         String d = (String)def;
-
-
         try {
             FileOutputStream fOut = openFileOutput("new_gloss.txt",MODE_APPEND);
             fOut.write((t+System.getProperty("line.separator")).getBytes());

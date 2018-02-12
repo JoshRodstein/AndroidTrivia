@@ -10,7 +10,10 @@
 package com.example.josh.triviagame;
 
 /**
- * Created by josh on 1/24/18.
+ * Created by Josh Rodstein on 1/24/18.
+ *
+ * GlossaryEntry class represents the Term and matching definition
+ * to be added to or read from an existing glossary file.
  */
 
 class GlossaryEntry {
